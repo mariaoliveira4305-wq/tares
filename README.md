@@ -1,68 +1,48 @@
-# tares
-# Sistema de Bem-Estar Escolar
+# Requisitos do Sistema
 
-## Proposta do Sistema
+## Requisitos Obrigatórios
 
-O Sistema de Bem-Estar Escolar tem como objetivo auxiliar escolas no acompanhamento do bem-estar dos alunos, permitindo o cadastro de usuários, consulta de informações e gerenciamento das atividades relacionadas ao ambiente escolar.
+O Sistema de Bem-Estar Escolar deverá ser desenvolvido em Java utilizando os conceitos de Programação Orientada a Objetos (POO).
 
-O sistema foi desenvolvido utilizando a linguagem Java e os conceitos de Programação Orientada a Objetos (POO), como herança, encapsulamento, polimorfismo e tratamento de exceções.
+### RF01 – Herança
 
-## Objetivos
+O sistema deve possuir uma classe base `Usuario` e classes derivadas, como `Aluno`, `Professor` e `Administrador`, demonstrando o uso de herança.
 
-* Organizar informações dos usuários da escola.
-* Facilitar o acompanhamento de alunos.
-* Demonstrar conceitos fundamentais de Programação Orientada a Objetos.
-* Fornecer uma aplicação simples para fins educacionais.
+### RF02 – Encapsulamento
 
-## Requisitos Funcionais
+Os atributos das classes devem ser privados (`private`) e acessados por meio de métodos getters e setters, garantindo a segurança dos dados.
 
-### RF01 – Cadastro de Usuários
+### RF03 – Polimorfismo
 
-O sistema deve permitir o cadastro de alunos, professores e administradores.
+O sistema deve implementar métodos sobrescritos nas classes filhas, permitindo comportamentos diferentes para cada tipo de usuário.
 
-### RF02 – Consulta de Usuários
+### RF04 – Tratamento de Erros
 
-O sistema deve permitir visualizar os usuários cadastrados.
+O sistema deve utilizar estruturas de tratamento de exceções (`try`, `catch` e `finally`) para evitar falhas durante a execução e tornar a aplicação mais robusta.
 
-### RF03 – Controle de Permissões
+### RF05 – Cadastro e Consulta
 
-O sistema deve apresentar permissões diferentes para cada tipo de usuário.
-
-### RF04 – Gerenciamento de Informações
-
-O administrador deve possuir acesso completo às funcionalidades do sistema.
-
-### RF05 – Tratamento de Erros
-
-O sistema deve tratar possíveis erros durante a execução.
+O sistema deve permitir o cadastro e a consulta dos usuários armazenados em memória.
 
 ## Requisitos Não Funcionais
 
-### RNF01 – Facilidade de Uso
+### RNF01 – Robustez
 
-O sistema deve possuir interface simples baseada em console.
+O software deve ser capaz de lidar com entradas inválidas e situações inesperadas sem encerrar sua execução abruptamente.
 
-### RNF02 – Desempenho
+### RNF02 – Simplicidade
 
-As operações devem ser executadas rapidamente em memória.
+O sistema deve possuir código simples, organizado e de fácil manutenção.
 
-### RNF03 – Manutenibilidade
+### RNF03 – Armazenamento em Memória
 
-O código deve ser organizado e utilizar boas práticas de programação.
+Os dados devem ser armazenados apenas em estruturas de memória (listas, vetores ou coleções).
 
-## Conceitos de POO Utilizados
+### RNF04 – Sem Banco de Dados
 
-* Herança
-* Encapsulamento
-* Polimorfismo
-* Tratamento de Exceções
+O sistema não deve realizar qualquer conexão com banco de dados, seja local ou remoto.
 
-## Tecnologias Utilizadas
+### RNF05 – Portabilidade
 
-* Java
-* Git
-* GitHub
+O sistema deve poder ser executado em qualquer computador que possua a Máquina Virtual Java (JVM) instalada.
 
-## Autor
-
-Maria Cassiane
