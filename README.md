@@ -15,36 +15,46 @@ O sistema foi desenvolvido utilizando a linguagem Java e os conceitos de Program
 
 ## Requisitos Funcionais
 
-### RF01 – Cadastro de Usuários
+RF01 – Herança
 
-O sistema deve permitir o cadastro de alunos, professores e administradores.
+O sistema deve possuir uma classe base Usuario e classes derivadas, como Aluno, Professor e Administrador, demonstrando o uso de herança.
 
-### RF02 – Consulta de Usuários
+RF02 – Encapsulamento
 
-O sistema deve permitir visualizar os usuários cadastrados.
+Os atributos das classes devem ser privados (private) e acessados por meio de métodos getters e setters, garantindo a segurança dos dados.
 
-### RF03 – Controle de Permissões
+RF03 – Polimorfismo
 
-O sistema deve apresentar permissões diferentes para cada tipo de usuário.
+O sistema deve implementar métodos sobrescritos nas classes filhas, permitindo comportamentos diferentes para cada tipo de usuário.
 
-### RF04 – Gerenciamento de Informações
+RF04 – Tratamento de Erros
 
-O administrador deve possuir acesso completo às funcionalidades do sistema.
+O sistema deve utilizar estruturas de tratamento de exceções (try, catch e finally) para evitar falhas durante a execução e tornar a aplicação mais robusta.
 
-### RF05 – Tratamento de Erros
+RF05 – Cadastro e Consulta
 
-O sistema deve tratar possíveis erros durante a execução.
+O sistema deve permitir o cadastro e a consulta dos usuários armazenados em memória.
 
-## Requisitos Não Funcionais
+Requisitos Não Funcionais
+RNF01 – Robustez
 
-### RNF01 – Facilidade de Uso
+O software deve ser capaz de lidar com entradas inválidas e situações inesperadas sem encerrar sua execução abruptamente.
 
-O sistema deve possuir interface simples baseada em console.
+RNF02 – Simplicidade
 
-### RNF02 – Desempenho
+O sistema deve possuir código simples, organizado e de fácil manutenção.
 
-As operações devem ser executadas rapidamente em memória.
+RNF03 – Armazenamento em Memória
 
+Os dados devem ser armazenados apenas em estruturas de memória (listas, vetores ou coleções).
+
+RNF04 – Sem Banco de Dados
+
+O sistema não deve realizar qualquer conexão com banco de dados, seja local ou remoto.
+
+RNF05 – Portabilidade
+
+O sistema deve poder ser executado em qualquer computador que possua a Máquina Virtual Java (JVM) instalada.
 ### RNF03 – Manutenibilidade
 
 O código deve ser organizado e utilizar boas práticas de programação.
